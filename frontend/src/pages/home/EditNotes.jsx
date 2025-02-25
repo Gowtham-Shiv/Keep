@@ -39,7 +39,7 @@ const EditNotes = ({ noteData, type, getAllNotes, onClose, showToastMessage }) =
         const noteId = noteData._id;
 
         try {
-            const response = await axiosInstance.put("/edit-note/" + noteId, {
+            const response = await axiosInstance.put("https://keep-1.onrender.com/edit-note/" + noteId, {
                 title,
                 content,
                 tags,
