@@ -34,7 +34,7 @@ const SignUp = () => {
 
     // sigunup api
     try {
-      const response = await axiosInstance.post("/create-account", {
+      const response = await axiosInstance.post("https://keep-1.onrender.com/create-account", {
         fullName: name,
         email: email,
         password: password,
