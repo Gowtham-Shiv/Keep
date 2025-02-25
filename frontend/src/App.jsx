@@ -5,14 +5,15 @@ import SignUp from './pages/signup/SignUp';
 
 const App = () => {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Login />} />
-          <Route path='/dashboard' element={<Home />} />
-          <Route path='/signup' element={<SignUp />} />
-        </Routes>
-      </BrowserRouter>
-  )
+      // <BrowserRouter>
+      //   <Routes>
+      //     <Route path='/login' element={<Login />} />
+      //     <Route path='/dashboard' element={<Home />} />
+      //     <Route path='/signup' element={<SignUp />} />
+      //   </Routes>
+      // </BrowserRouter>
 
+    This is Gowtham
+  )
 };
 export default App
