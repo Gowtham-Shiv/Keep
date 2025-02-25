@@ -11,15 +11,13 @@ import SignUp from './pages/signup/SignUp';
 
 const App = () => {
   return (
-    <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/dashboard' element={<Home />} />
           <Route path='/' element={<Login />} />
+          <Route path='/dashboard' element={<Home />} />
           <Route path='/signup' element={<SignUp />} />
         </Routes>
       </BrowserRouter>
-    </div>
   )
 
 };
