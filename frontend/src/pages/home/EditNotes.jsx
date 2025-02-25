@@ -13,7 +13,7 @@ const EditNotes = ({ noteData, type, getAllNotes, onClose, showToastMessage }) =
     // add note
     const addNewNote = async () => {
         try {
-            const response = await axiosInstance.post("/add-note", {
+            const response = await axiosInstance.post("https://keep-1.onrender.com/add-note", {
                 title,
                 content,
                 tags,
