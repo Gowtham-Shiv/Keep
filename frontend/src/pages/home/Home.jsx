@@ -56,7 +56,7 @@ const Home = () => {
   // get user info
   const getUserInfo = async () => {
     try {
-      const response = await axiosInstance.get("/get-user");
+      const response = await axiosInstance.get("https://keep-1.onrender.com/get-user");
       if (response.data && response.data.user) {
         setUserInfo(response.data.user);
       }
@@ -71,7 +71,7 @@ const Home = () => {
   // get notes
   const getAllNotes = async () => {
     try {
-      const response = await axiosInstance.get("/get-all-notes");
+      const response = await axiosInstance.get("https://keep-1.onrender.com/get-all-notes");
 
       if (response.data && response.data.notes) {
         setAllNotes(response.data.notes);
@@ -86,7 +86,7 @@ const Home = () => {
     const noteId = data._id;
 
     try {
-      const response = await axiosInstance.delete("/delete-note/" + noteId);
+      const response = await axiosInstance.delete("https://keep-1.onrender.com/delete-note/" + noteId);
 
       if (response.data && !response.data.error) {
         showToastMessage("Deleted Successfully", 'delete');
@@ -106,7 +106,7 @@ const Home = () => {
   // search notes
   const onSearchNote = async (query) => {
     try {
-      const response = await axiosInstance.get("/search-notes", {
+      const response = await axiosInstance.get("https://keep-1.onrender.com/search-notes", {
         params: { query },
       });
 
@@ -124,7 +124,7 @@ const Home = () => {
     const noteId = noteData._id;
 
     try {
-      const response = await axiosInstance.put("/update-note-pinned/" + noteId, {
+      const response = await axiosInstance.put("https://keep-1.onrender.com/update-note-pinned/" + noteId, {
         isPinned: !noteId.isPinned,
       });
 
