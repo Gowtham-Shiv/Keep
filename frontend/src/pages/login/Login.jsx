@@ -27,7 +27,7 @@ const Login = () => {
 
         // login api
         try {
-            const response = await axiosInstance.post("/login", {
+            const response = await axiosInstance.post("https://keep-1.onrender.com/login", {
                 email: email,
                 password: password,
             })
