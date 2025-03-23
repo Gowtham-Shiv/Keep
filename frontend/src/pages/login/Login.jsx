@@ -40,7 +40,7 @@ const Login = () => {
             if (error.response && error.response.data && error.response.data.message) {
                 setError(error.respsonse.data.message);
             } else {
-                setError("Eror occ")
+                // setError("Eror occ")
             }
         }
     };
